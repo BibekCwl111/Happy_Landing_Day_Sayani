@@ -1,0 +1,6 @@
+{
+  "name": "A Whimsical Birthday Wish & Digital Memory Scrapbook",
+  "description": "An interactive birthday wish experience featuring playful runaway buttons, reactive teddy bear animations, confetti celebration, heartfelt video message, and a digital memory scrapbook with falling flower petals and calming lo-fi music.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

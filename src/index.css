@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-handwriting: 'Caveat', cursive;
+  --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+.font-handwriting {
+  font-family: 'Caveat', cursive;
+}
+
+.font-display {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-body {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+/* Scrapbook Paper Texture & Dotted Notebook Pattern */
+.bg-scrapbook-paper {
+  background-color: #fdfaf6;
+  background-image: radial-gradient(#e7dec8 1.1px, transparent 1.1px);
+  background-size: 22px 22px;
+}
+
+.bg-dot-grid {
+  background-image: radial-gradient(rgba(244, 114, 182, 0.22) 1.2px, transparent 1.2px);
+  background-size: 18px 18px;
+}
+
+/* Washi Tape styling */
+.washi-tape {
+  position: absolute;
+  height: 22px;
+  background: rgba(254, 205, 211, 0.82);
+  backdrop-filter: blur(2px);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-left: 2px dashed rgba(244, 63, 94, 0.35);
+  border-right: 2px dashed rgba(244, 63, 94, 0.35);
+}
+
+@keyframes floatGentle {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1.5deg);
+  }
+}
+
+.animate-float {
+  animation: floatGentle 4s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(251, 113, 133, 0.35);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(251, 113, 133, 0.65);
+  }
+}
+
+.animate-glow {
+  animation: pulseGlow 2.5s infinite;
+}
